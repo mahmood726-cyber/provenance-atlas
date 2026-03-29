@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProvenanceAtlas</title>
+  <meta name="description" content="W3C PROV style lineage dashboard for the C-drive research portfolio snapshot.">
+  <style>
+    :root {
+      --bg: #eef5f5;
+      --ink: #142129;
+      --muted: #4f6270;
+      --line: rgba(20, 33, 41, 0.12);
+      --panel: rgba(249, 252, 253, 0.92);
+      --accent: #0b7285;
+      --accent-2: #b45309;
+      --shadow: 0 26px 60px rgba(20, 33, 41, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Bahnschrift", "Trebuchet MS", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 22%, rgba(11, 114, 133, 0.12), transparent 22%),
+        radial-gradient(circle at 84% 14%, rgba(180, 83, 9, 0.12), transparent 22%),
+        linear-gradient(180deg, #f5f8f8 0%, #e8efef 100%);
+    }
+
+    main {
+      width: min(1160px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .hero,
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .hero {
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.76rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1, h2 {
+      margin: 0;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    h1 { font-size: clamp(2.3rem, 5vw, 4.6rem); }
+    h2 { font-size: 1.45rem; }
+
+    p {
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .label {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .value {
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .row strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    .row span {
+      display: block;
+      color: var(--muted);
+    }
+
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(11, 114, 133, 0.12);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      text-align: right;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .section { margin-top: 18px; }
+
+    @media (max-width: 860px) {
+      .hero,
+      .grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel hero">
+      <div>
+        <p class="eyebrow">Research Lineage</p>
+        <h1>ProvenanceAtlas</h1>
+        <p>
+          A new project that treats the C-drive portfolio as a provenance problem: source snapshot in,
+          entity-activity-agent graph out, with unresolved project states made visible as lineage breaks.
+        </p>
+      </div>
+      <aside class="panel" style="padding:18px">
+        <p class="eyebrow" style="margin-bottom:10px">Graph Summary</p>
+        <div class="stats" id="metric-grid"></div>
+      </aside>
+    </section>
+
+    <section class="grid section">
+      <section class="panel">
+        <p class="eyebrow">Activity Flow</p>
+        <h2>How the graph is assembled</h2>
+        <div class="stack" id="activity-flow"></div>
+      </section>
+      <section class="panel">
+        <p class="eyebrow">Status Evidence</p>
+        <h2>Explicit lifecycle labels preserved in the graph</h2>
+        <div class="stack" id="status-breakdown"></div>
+      </section>
+    </section>
+
+    <section class="grid section">
+      <section class="panel">
+        <p class="eyebrow">Hotspots</p>
+        <h2>Tiers generating the most unresolved lineage</h2>
+        <div class="stack" id="tier-coverage"></div>
+      </section>
+      <section class="panel">
+        <p class="eyebrow">Entity Mix</p>
+        <h2>Project classes represented in the atlas</h2>
+        <div class="stack" id="type-breakdown"></div>
+      </section>
+    </section>
+
+    <section class="panel section">
+      <p class="eyebrow">Unresolved Queue</p>
+      <h2>Project records still missing a frozen lifecycle state</h2>
+      <div class="stack" id="unresolved-projects"></div>
+    </section>
+
+    <section class="panel section">
+      <p class="eyebrow">Artifacts</p>
+      <h2>Repo outputs</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="label">Graph</span>
+          <strong>prov-graph.json</strong>
+          <p>The generated entity-activity-agent graph encoded as static JSON.</p>
+          <a href="prov-graph.json">Open graph</a>
+        </article>
+        <article class="card">
+          <span class="label">Builder</span>
+          <strong>scripts/build_provenance_atlas.py</strong>
+          <p>The snapshot-first generator that emits the graph and dashboard payload.</p>
+          <a href="scripts/build_provenance_atlas.py">Open builder</a>
+        </article>
+        <article class="card">
+          <span class="label">Reader</span>
+          <strong>e156-submission/index.html</strong>
+          <p>The micro-paper and protocol capsule for publication-facing review.</p>
+          <a href="e156-submission/index.html">Open E156 reader</a>
+        </article>
+        <article class="card">
+          <span class="label">Source snapshot</span>
+          <strong>data-source/portfolio-data.snapshot.json</strong>
+          <p>The bundled portfolio snapshot used to keep the repo rebuildable on its own.</p>
+          <a href="data-source/portfolio-data.snapshot.json">Open snapshot</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script>
+    const data = window.PROVENANCE_ATLAS_DATA;
+
+    function card(label, value) {
+      return '<div class="card"><span class="label">' + label + '</span><span class="value">' + value + '</span></div>';
+    }
+
+    function row(title, subtitle, value) {
+      return '<div class="row"><div><strong>' + title + '</strong><span>' + subtitle + '</span></div><span class="pill">' + value + '</span></div>';
+    }
+
+    document.getElementById('metric-grid').innerHTML = [
+      card('Nodes', data.metrics.nodeCount),
+      card('Edges', data.metrics.edgeCount),
+      card('Entities', data.metrics.entityCount),
+      card('Coverage', data.metrics.explicitCoveragePercent + '%')
+    ].join('');
+
+    document.getElementById('activity-flow').innerHTML = data.activityFlow.map(function(item, index) {
+      return row((index + 1) + '. ' + item.activity, item.detail, 'stage');
+    }).join('');
+
+    document.getElementById('status-breakdown').innerHTML = data.explicitStatusBreakdown.map(function(item) {
+      return row(item.status, 'Projects with this explicit status preserved', item.count);
+    }).join('');
+
+    document.getElementById('tier-coverage').innerHTML = data.tierCoverage.slice(0, 8).map(function(item) {
+      return row(item.name, item.fullName, item.needsTriage + ' unresolved');
+    }).join('');
+
+    document.getElementById('type-breakdown').innerHTML = data.typeBreakdown.map(function(item) {
+      return row(item.type, 'Project entities of this class', item.count);
+    }).join('');
+
+    document.getElementById('unresolved-projects').innerHTML = data.unresolvedProjects.map(function(item) {
+      return row(item.name, item.tier + ' | ' + item.type, item.path);
+    }).join('');
+  </script>
+</body>
+</html>

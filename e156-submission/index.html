@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProvenanceAtlas E156</title>
+  <meta name="description" content="E156 micro-paper and protocol for ProvenanceAtlas.">
+  <style>
+    :root {
+      --bg: #eef5f5;
+      --ink: #142129;
+      --muted: #4f6270;
+      --line: rgba(20, 33, 41, 0.12);
+      --panel: rgba(249, 252, 253, 0.92);
+      --accent: #0b7285;
+      --accent-2: #b45309;
+      --shadow: 0 24px 60px rgba(20, 33, 41, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Bahnschrift", "Trebuchet MS", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 18%, rgba(11, 114, 133, 0.12), transparent 24%),
+        radial-gradient(circle at 80% 20%, rgba(180, 83, 9, 0.12), transparent 24%),
+        linear-gradient(180deg, #f5f8f8 0%, #e8efef 100%);
+    }
+
+    main {
+      width: min(980px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+      gap: 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1, h2 {
+      margin: 0;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); }
+    h2 { font-size: 1.45rem; }
+
+    p {
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .meta-grid,
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .meta-card,
+    .artifact-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .label {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .value {
+      font-size: 1.5rem;
+      line-height: 1;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .paper-body {
+      color: var(--ink);
+      font-size: 1.02rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .artifact-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .artifact-card p {
+      margin: 0 0 10px;
+    }
+
+    .footnote {
+      margin-top: 18px;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero,
+      .meta-grid,
+      .artifact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel hero">
+      <div>
+        <p class="eyebrow">E156 Submission</p>
+        <h1>ProvenanceAtlas</h1>
+        <p>
+          A publication-facing capsule for the lineage gap: one static graph dashboard, one PROV-style export,
+          and one 156-word micro-paper built from the bundled portfolio snapshot.
+        </p>
+      </div>
+      <aside class="panel" style="padding:18px">
+        <p class="eyebrow" style="margin-bottom:10px">Audit Snapshot</p>
+        <div class="meta-grid" style="margin-top:0">
+          <div class="meta-card">
+            <span class="label">Nodes</span>
+            <span class="value">157</span>
+          </div>
+          <div class="meta-card">
+            <span class="label">Edges</span>
+            <span class="value">439</span>
+          </div>
+          <div class="meta-card">
+            <span class="label">Projects</span>
+            <span class="value">134</span>
+          </div>
+          <div class="meta-card">
+            <span class="label">Unresolved</span>
+            <span class="value">83</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="panel section">
+      <p class="eyebrow">Micro-paper</p>
+      <h2>156-word body</h2>
+      <p class="paper-body">
+        Can a portfolio inventory also show how its evidence was transformed, not just what projects it contains? We reused the bundled ResearchConstellation snapshot containing 134 indexed projects across 12 tiers and converted it into a PROV-style entity-activity-agent graph. ProvenanceAtlas v0.1 emits project entities, tier entities, summary outputs, and explicit build activities so lineage remains inspectable in a static repository for downstream review. The generated graph contained 157 nodes and 439 edges, while explicit lifecycle coverage remained 38.1 percent (51 of 134 projects), leaving 83 unresolved records inside the lineage. The strongest provenance pressure came from tiers 10 and 12, which alone contributed 57 unresolved projects and concentrated most broken downstream status chains. This reframes the portfolio gap as a provenance problem: without frozen lifecycle labels, later packaging, dashboards, and exchange layers inherit ambiguity by design. The atlas clarifies derivation paths, but it does not inspect live filesystem events, Git history, or authorship beyond the bundled snapshot.
+      </p>
+    </section>
+
+    <section class="panel section">
+      <p class="eyebrow">Artifacts</p>
+      <h2>What ships with the capsule</h2>
+      <div class="artifact-grid">
+        <article class="artifact-card">
+          <strong>Live dashboard</strong>
+          <p>The working lineage dashboard compiled from the bundled portfolio snapshot.</p>
+          <a href="../index.html">Open the dashboard</a>
+        </article>
+        <article class="artifact-card">
+          <strong>Protocol</strong>
+          <p>The provenance-first audit plan defining the graph and coverage outputs.</p>
+          <a href="protocol.md">Read protocol.md</a>
+        </article>
+        <article class="artifact-card">
+          <strong>Machine-readable paper</strong>
+          <p>JSON metadata for the E156 body, sentence roles, and validation details.</p>
+          <a href="paper.json">Open paper.json</a>
+        </article>
+        <article class="artifact-card">
+          <strong>Dashboard handoff</strong>
+          <p>A lightweight page that points reviewers back to the graph and root dashboard.</p>
+          <a href="assets/dashboard.html">Open dashboard handoff</a>
+        </article>
+      </div>
+      <p class="footnote">
+        Source files ship with this repository: <a href="../scripts/build_provenance_atlas.py">builder</a>, <a href="../prov-graph.json">graph JSON</a>, and <a href="../data-source/portfolio-data.snapshot.json">bundled snapshot</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

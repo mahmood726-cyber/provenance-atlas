@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProvenanceAtlas Dashboard Handoff</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Bahnschrift", "Trebuchet MS", "Segoe UI", sans-serif;
+      color: #142129;
+      background: linear-gradient(180deg, #f5f8f8 0%, #e8efef 100%);
+    }
+
+    main {
+      width: min(820px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .panel {
+      background: rgba(249, 252, 253, 0.94);
+      border: 1px solid rgba(20, 33, 41, 0.12);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 24px 60px rgba(20, 33, 41, 0.12);
+    }
+
+    h1, h2 {
+      margin: 0;
+      line-height: 1.04;
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); }
+    h2 { font-size: 1.2rem; margin-top: 20px; }
+
+    p { line-height: 1.7; color: #4f6270; }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    a {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(11, 114, 133, 0.08);
+      color: #0b7285;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>ProvenanceAtlas</h1>
+      <p>
+        This handoff page keeps the E156 bundle compact while still linking directly to the working lineage dashboard
+        and the core graph artifacts.
+      </p>
+      <h2>Open</h2>
+      <div class="links">
+        <a href="../../index.html">Root dashboard</a>
+        <a href="../../prov-graph.json">Graph JSON</a>
+        <a href="../../data.json">Derived dashboard data</a>
+        <a href="../../scripts/build_provenance_atlas.py">Builder</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

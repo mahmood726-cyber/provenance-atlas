@@ -1,0 +1,99 @@
+{
+  "title": "ProvenanceAtlas: Static Lineage Graphing for the C Drive Evidence Portfolio",
+  "slug": "provenance-atlas",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Can a portfolio inventory also show how its evidence was transformed, not just what projects it contains? We reused the bundled ResearchConstellation snapshot containing 134 indexed projects across 12 tiers and converted it into a PROV-style entity-activity-agent graph. ProvenanceAtlas v0.1 emits project entities, tier entities, summary outputs, and explicit build activities so lineage remains inspectable in a static repository for downstream review. The generated graph contained 157 nodes and 439 edges, while explicit lifecycle coverage remained 38.1 percent (51 of 134 projects), leaving 83 unresolved records inside the lineage. The strongest provenance pressure came from tiers 10 and 12, which alone contributed 57 unresolved projects and concentrated most broken downstream status chains. This reframes the portfolio gap as a provenance problem: without frozen lifecycle labels, later packaging, dashboards, and exchange layers inherit ambiguity by design. The atlas clarifies derivation paths, but it does not inspect live filesystem events, Git history, or authorship beyond the bundled snapshot.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Can a portfolio inventory also show how its evidence was transformed, not just what projects it contains?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We reused the bundled ResearchConstellation snapshot containing 134 indexed projects across 12 tiers and converted it into a PROV-style entity-activity-agent graph."
+    },
+    {
+      "role": "Method",
+      "text": "ProvenanceAtlas v0.1 emits project entities, tier entities, summary outputs, and explicit build activities so lineage remains inspectable in a static repository for downstream review."
+    },
+    {
+      "role": "Primary result",
+      "text": "The generated graph contained 157 nodes and 439 edges, while explicit lifecycle coverage remained 38.1 percent (51 of 134 projects), leaving 83 unresolved records inside the lineage."
+    },
+    {
+      "role": "Secondary result",
+      "text": "The strongest provenance pressure came from tiers 10 and 12, which alone contributed 57 unresolved projects and concentrated most broken downstream status chains."
+    },
+    {
+      "role": "Interpretation",
+      "text": "This reframes the portfolio gap as a provenance problem: without frozen lifecycle labels, later packaging, dashboards, and exchange layers inherit ambiguity by design."
+    },
+    {
+      "role": "Boundary",
+      "text": "The atlas clarifies derivation paths, but it does not inspect live filesystem events, Git history, or authorship beyond the bundled snapshot."
+    }
+  ],
+  "notes": {
+    "app": "ProvenanceAtlas v0.1",
+    "data": "134 indexed projects across 12 tiers parsed from data-source/portfolio-data.snapshot.json",
+    "code": "repository root; scripts/build_provenance_atlas.py; prov-graph.json",
+    "doi": "",
+    "version": "0.1",
+    "date": "2026-03-29",
+    "certainty": "moderate",
+    "validation": "PASS",
+    "protocol": "e156-submission/protocol.md",
+    "source_article": ""
+  },
+  "type": "methods",
+  "primary_estimand": "explicit lifecycle coverage in the provenance graph",
+  "validation": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a confidence interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": true,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}

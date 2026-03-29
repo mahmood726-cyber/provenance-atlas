@@ -1,0 +1,3728 @@
+{
+  "project": "ProvenanceAtlas",
+  "generatedAt": "2026-03-29T12:15:27+00:00",
+  "prefix": {
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "summary": {
+    "nodeCount": 157,
+    "edgeCount": 439,
+    "entityCount": 151,
+    "activityCount": 4,
+    "agentCount": 2,
+    "trackedProjects": 134,
+    "explicitStatusCount": 51,
+    "explicitCoveragePercent": 38.1,
+    "needsTriage": 83
+  },
+  "nodes": [
+    {
+      "id": "entity:snapshot",
+      "provType": "Entity",
+      "label": "portfolio-data.snapshot.json",
+      "category": "source",
+      "path": "data-source/INDEX.snapshot.md"
+    },
+    {
+      "id": "entity:summary",
+      "provType": "Entity",
+      "label": "Provenance summary",
+      "category": "derived"
+    },
+    {
+      "id": "entity:dashboard",
+      "provType": "Entity",
+      "label": "index.html",
+      "category": "derived"
+    },
+    {
+      "id": "entity:paper",
+      "provType": "Entity",
+      "label": "e156-submission/paper.json",
+      "category": "derived"
+    },
+    {
+      "id": "entity:graph",
+      "provType": "Entity",
+      "label": "prov-graph.json",
+      "category": "derived"
+    },
+    {
+      "id": "activity:parse",
+      "provType": "Activity",
+      "label": "Parse snapshot"
+    },
+    {
+      "id": "activity:summarize",
+      "provType": "Activity",
+      "label": "Summarize tiers and projects"
+    },
+    {
+      "id": "activity:render",
+      "provType": "Activity",
+      "label": "Render dashboard payload"
+    },
+    {
+      "id": "activity:package",
+      "provType": "Activity",
+      "label": "Package E156 bundle"
+    },
+    {
+      "id": "agent:author",
+      "provType": "Agent",
+      "label": "Mahmood Ahmad",
+      "role": "author"
+    },
+    {
+      "id": "agent:builder",
+      "provType": "Agent",
+      "label": "build_provenance_atlas.py",
+      "role": "software"
+    },
+    {
+      "id": "entity:tier:tier-1",
+      "provType": "Entity",
+      "label": "Tier 1 \u2014 Flagship Projects (active or near-submission)",
+      "category": "tier",
+      "coveragePercent": 42.9,
+      "projectCount": 7,
+      "needsTriage": 4
+    },
+    {
+      "id": "entity:tier:tier-2",
+      "provType": "Entity",
+      "label": "Tier 2 \u2014 HTML Apps Portfolio",
+      "category": "tier",
+      "coveragePercent": 100.0,
+      "projectCount": 8,
+      "needsTriage": 0
+    },
+    {
+      "id": "entity:tier:tier-3",
+      "provType": "Entity",
+      "label": "Tier 3 \u2014 MetaSprint Family (C:\\Projects\\)",
+      "category": "tier",
+      "coveragePercent": 100.0,
+      "projectCount": 6,
+      "needsTriage": 0
+    },
+    {
+      "id": "entity:tier:tier-4",
+      "provType": "Entity",
+      "label": "Tier 4 \u2014 R Packages & Methods Papers",
+      "category": "tier",
+      "coveragePercent": 100.0,
+      "projectCount": 20,
+      "needsTriage": 0
+    },
+    {
+      "id": "entity:tier:tier-5",
+      "provType": "Entity",
+      "label": "Tier 5 \u2014 Cutting-Edge MA Trio + New Root-Level Methods (2026-03-24/25)",
+      "category": "tier",
+      "coveragePercent": 57.1,
+      "projectCount": 7,
+      "needsTriage": 3
+    },
+    {
+      "id": "entity:tier:tier-6",
+      "provType": "Entity",
+      "label": "Tier 6 \u2014 Infrastructure & Datasets",
+      "category": "tier",
+      "coveragePercent": 0.0,
+      "projectCount": 8,
+      "needsTriage": 8
+    },
+    {
+      "id": "entity:tier:tier-7",
+      "provType": "Entity",
+      "label": "Tier 7 \u2014 HTA Suite",
+      "category": "tier",
+      "coveragePercent": 100.0,
+      "projectCount": 6,
+      "needsTriage": 0
+    },
+    {
+      "id": "entity:tier:tier-8",
+      "provType": "Entity",
+      "label": "Tier 8 \u2014 Educational & Course Material",
+      "category": "tier",
+      "coveragePercent": 0.0,
+      "projectCount": 3,
+      "needsTriage": 3
+    },
+    {
+      "id": "entity:tier:tier-9",
+      "provType": "Entity",
+      "label": "Tier 9 \u2014 Collaborative & External",
+      "category": "tier",
+      "coveragePercent": 20.0,
+      "projectCount": 5,
+      "needsTriage": 4
+    },
+    {
+      "id": "entity:tier:tier-10",
+      "provType": "Entity",
+      "label": "Tier 10 \u2014 Smaller / Standalone Apps",
+      "category": "tier",
+      "coveragePercent": 3.0,
+      "projectCount": 33,
+      "needsTriage": 32
+    },
+    {
+      "id": "entity:tier:tier-11",
+      "provType": "Entity",
+      "label": "Tier 11 \u2014 Website & Non-Academic",
+      "category": "tier",
+      "coveragePercent": 20.0,
+      "projectCount": 5,
+      "needsTriage": 4
+    },
+    {
+      "id": "entity:tier:tier-12",
+      "provType": "Entity",
+      "label": "Tier 12 \u2014 Research Projects (C:\\Projects\\, various)",
+      "category": "tier",
+      "coveragePercent": 3.8,
+      "projectCount": 26,
+      "needsTriage": 25
+    },
+    {
+      "id": "entity:project:6-adaptsim",
+      "provType": "Entity",
+      "label": "AdaptSim",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\AdaptSim\\"
+    },
+    {
+      "id": "entity:project:4-al-mizan",
+      "provType": "Entity",
+      "label": "Al-Mizan",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\AlMizan\\"
+    },
+    {
+      "id": "entity:project:5-bias-forensics",
+      "provType": "Entity",
+      "label": "Bias Forensics",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\BiasForensics\\"
+    },
+    {
+      "id": "entity:project:1-cardiooracle",
+      "provType": "Entity",
+      "label": "CardioOracle",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\CardioOracle\\"
+    },
+    {
+      "id": "entity:project:7-clinic-website",
+      "provType": "Entity",
+      "label": "Clinic Website",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\clinic-site\\"
+    },
+    {
+      "id": "entity:project:2-fragility-atlas",
+      "provType": "Entity",
+      "label": "Fragility Atlas",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\FragilityAtlas\\"
+    },
+    {
+      "id": "entity:project:3-metareproducer",
+      "provType": "Entity",
+      "label": "MetaReproducer",
+      "category": "project",
+      "tier": "Tier 1",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MetaReproducer\\"
+    },
+    {
+      "id": "entity:project:68-3dvitreous-grapher",
+      "provType": "Entity",
+      "label": "3dvitreous-grapher",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\3dvitreous-grapher\\"
+    },
+    {
+      "id": "entity:project:63-asa",
+      "provType": "Entity",
+      "label": "Asa",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\Asa\\"
+    },
+    {
+      "id": "entity:project:73a-asa",
+      "provType": "Entity",
+      "label": "Asa",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\Asa\\"
+    },
+    {
+      "id": "entity:project:109-bayesian-ma",
+      "provType": "Entity",
+      "label": "Bayesian MA",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\BayesianMA\\"
+    },
+    {
+      "id": "entity:project:107-benfordma",
+      "provType": "Entity",
+      "label": "BenfordMA",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\BenfordMA\\"
+    },
+    {
+      "id": "entity:project:103-component-nma",
+      "provType": "Entity",
+      "label": "Component NMA",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\ComponentNMA\\"
+    },
+    {
+      "id": "entity:project:66-ctgov-search-strategies",
+      "provType": "Entity",
+      "label": "ctgov-search-strategies",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\ctgov-search-strategies\\"
+    },
+    {
+      "id": "entity:project:67-cv-rct-analysis",
+      "provType": "Entity",
+      "label": "cv-rct-analysis",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\cv-rct-analysis\\"
+    },
+    {
+      "id": "entity:project:108-evidence-half-life",
+      "provType": "Entity",
+      "label": "Evidence Half-Life",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\EvidenceHalfLife\\"
+    },
+    {
+      "id": "entity:project:105-evidencequality-concordance",
+      "provType": "Entity",
+      "label": "EvidenceQuality (Concordance)",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\EvidenceQuality\\"
+    },
+    {
+      "id": "entity:project:73f-living-ma-engine",
+      "provType": "Entity",
+      "label": "Living MA Engine",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\living-meta-engine\\"
+    },
+    {
+      "id": "entity:project:69-livingmeta-watchman",
+      "provType": "Entity",
+      "label": "LivingMeta Watchman",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\LivingMeta_Watchman_Amulet\\"
+    },
+    {
+      "id": "entity:project:106-ma-power",
+      "provType": "Entity",
+      "label": "MA Power",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MAPowerCalc\\"
+    },
+    {
+      "id": "entity:project:110-ma-workbench",
+      "provType": "Entity",
+      "label": "MA Workbench",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MAWorkbench\\"
+    },
+    {
+      "id": "entity:project:113-meta-regression",
+      "provType": "Entity",
+      "label": "Meta-Regression",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MetaRegression\\"
+    },
+    {
+      "id": "entity:project:65-metaextract",
+      "provType": "Entity",
+      "label": "MetaExtract",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\MetaExtract\\"
+    },
+    {
+      "id": "entity:project:79-metaguard",
+      "provType": "Entity",
+      "label": "MetaGuard",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MetaGuard\\"
+    },
+    {
+      "id": "entity:project:80-metamethods",
+      "provType": "Entity",
+      "label": "MetaMethods",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MetaMethods\\"
+    },
+    {
+      "id": "entity:project:108a-metashift",
+      "provType": "Entity",
+      "label": "MetaShift",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\MetaShift\\"
+    },
+    {
+      "id": "entity:project:73-minireview",
+      "provType": "Entity",
+      "label": "minireview",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\minireview\\"
+    },
+    {
+      "id": "entity:project:73d-new-app",
+      "provType": "Entity",
+      "label": "new-app",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\new-app\\"
+    },
+    {
+      "id": "entity:project:73b-oman",
+      "provType": "Entity",
+      "label": "oman",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\oman\\"
+    },
+    {
+      "id": "entity:project:70-pfa-af-livingmeta",
+      "provType": "Entity",
+      "label": "PFA AF LivingMeta",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\PFA_AF_LivingMeta\\"
+    },
+    {
+      "id": "entity:project:112-pooling-suite",
+      "provType": "Entity",
+      "label": "Pooling Suite",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\PoolingSuite\\"
+    },
+    {
+      "id": "entity:project:73e-portfolio-site",
+      "provType": "Entity",
+      "label": "Portfolio Site",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\portfolio-site\\"
+    },
+    {
+      "id": "entity:project:107-prisma-checker",
+      "provType": "Entity",
+      "label": "PRISMA Checker",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\PRISMAChecker\\"
+    },
+    {
+      "id": "entity:project:111-pub-bias-suite",
+      "provType": "Entity",
+      "label": "Pub Bias Suite",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\PubBiasSuite\\"
+    },
+    {
+      "id": "entity:project:72-rayyanreplacement",
+      "provType": "Entity",
+      "label": "rayyanreplacement",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\rayyanreplacement\\"
+    },
+    {
+      "id": "entity:project:104-rmst-meta",
+      "provType": "Entity",
+      "label": "RMST Meta",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\RMSTmeta\\"
+    },
+    {
+      "id": "entity:project:102-rob-assessor",
+      "provType": "Entity",
+      "label": "RoB Assessor",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\RoBAssessor\\"
+    },
+    {
+      "id": "entity:project:73c-superapp",
+      "provType": "Entity",
+      "label": "superapp",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\superapp\\"
+    },
+    {
+      "id": "entity:project:64-trialradar",
+      "provType": "Entity",
+      "label": "TrialRadar",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Review",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\TrialRadar\\"
+    },
+    {
+      "id": "entity:project:71-tricuspid-teer",
+      "provType": "Entity",
+      "label": "Tricuspid TEER",
+      "category": "project",
+      "tier": "Tier 10",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\Tricuspid_TEER_LivingMeta\\"
+    },
+    {
+      "id": "entity:project:76-childnajia",
+      "provType": "Entity",
+      "label": "childnajia",
+      "category": "project",
+      "tier": "Tier 11",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\childnajia\\"
+    },
+    {
+      "id": "entity:project:74-clinic-site",
+      "provType": "Entity",
+      "label": "Clinic Site",
+      "category": "project",
+      "tier": "Tier 11",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\clinic-site\\"
+    },
+    {
+      "id": "entity:project:75-private-website",
+      "provType": "Entity",
+      "label": "Private Website",
+      "category": "project",
+      "tier": "Tier 11",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\private-website\\"
+    },
+    {
+      "id": "entity:project:78-stories",
+      "provType": "Entity",
+      "label": "Stories",
+      "category": "project",
+      "tier": "Tier 11",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\Stories\\"
+    },
+    {
+      "id": "entity:project:77-waternajia",
+      "provType": "Entity",
+      "label": "waternajia",
+      "category": "project",
+      "tier": "Tier 11",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\waternajia\\"
+    },
+    {
+      "id": "entity:project:97-advanced-nma-pooling",
+      "provType": "Entity",
+      "label": "advanced-nma-pooling",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:102-claude-plugins",
+      "provType": "Entity",
+      "label": "claude-plugins",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:101-claude-rct-work",
+      "provType": "Entity",
+      "label": "claude-rct-work",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:85-esc-acs-living-meta",
+      "provType": "Entity",
+      "label": "esc-acs-living-meta",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:93-everything-claude-code",
+      "provType": "Entity",
+      "label": "everything-claude-code",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:80-evidence-inference",
+      "provType": "Entity",
+      "label": "evidence-inference",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:91-experimental-meta-analysis",
+      "provType": "Entity",
+      "label": "experimental-meta-analysis",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:104-glm-code",
+      "provType": "Entity",
+      "label": "glm-code",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:83-hfpef-registry-calibration",
+      "provType": "Entity",
+      "label": "hfpef_registry_calibration",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:82-hfpef-registry-synth",
+      "provType": "Entity",
+      "label": "hfpef_registry_synth",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:92-idea12",
+      "provType": "Entity",
+      "label": "idea12",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:94-ipd-meta-pro-link",
+      "provType": "Entity",
+      "label": "ipd-meta-pro-link",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:95-ipd-qma-project",
+      "provType": "Entity",
+      "label": "ipd_qma_project",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:81-llm-meta-analysis",
+      "provType": "Entity",
+      "label": "llm-meta-analysis",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:88-mafi",
+      "provType": "Entity",
+      "label": "MAFI",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:89-mafi-continuation",
+      "provType": "Entity",
+      "label": "MAFI-Continuation",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:90-maxent-reconstructor",
+      "provType": "Entity",
+      "label": "maxent-reconstructor",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:79-meta-epidemiology-bias-correction",
+      "provType": "Entity",
+      "label": "meta-epidemiology-bias-correction",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:100-metafusion-lab",
+      "provType": "Entity",
+      "label": "MetaFusion-Lab",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:86-metanew",
+      "provType": "Entity",
+      "label": "Metanew",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:87-mlm501",
+      "provType": "Entity",
+      "label": "MLM501",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:103-multipledatameta",
+      "provType": "Entity",
+      "label": "Multipledatameta",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:96-prognostic-meta",
+      "provType": "Entity",
+      "label": "prognostic-meta",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:84-registry-first-rct-meta",
+      "provType": "Entity",
+      "label": "registry_first_rct_meta",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:99-surronma",
+      "provType": "Entity",
+      "label": "surroNMA",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:98-tower",
+      "provType": "Entity",
+      "label": "tower",
+      "category": "project",
+      "tier": "Tier 12",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\"
+    },
+    {
+      "id": "entity:project:13-dose-response-nma",
+      "provType": "Entity",
+      "label": "Dose-Response NMA",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Archived",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\nma-dose-response-app\\"
+    },
+    {
+      "id": "entity:project:10-dta-pro",
+      "provType": "Entity",
+      "label": "DTA Pro",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Archived",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\DTA_Pro_Review\\"
+    },
+    {
+      "id": "entity:project:11-hta-artifact-standard",
+      "provType": "Entity",
+      "label": "HTA Artifact Standard",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\HTA\\"
+    },
+    {
+      "id": "entity:project:9-ipd-meta-pro",
+      "provType": "Entity",
+      "label": "IPD-Meta-Pro",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\IPD-Meta-Pro\\"
+    },
+    {
+      "id": "entity:project:15-living-meta",
+      "provType": "Entity",
+      "label": "Living-Meta",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\living-meta\\"
+    },
+    {
+      "id": "entity:project:12-nma-apps",
+      "provType": "Entity",
+      "label": "NMA apps",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Archived",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\NMAhtml\\"
+    },
+    {
+      "id": "entity:project:14-pairwise-ai",
+      "provType": "Entity",
+      "label": "Pairwise AI",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Archived",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\Pairwiseai\\"
+    },
+    {
+      "id": "entity:project:8-truthcert-pairwisepro",
+      "provType": "Entity",
+      "label": "TruthCert PairwisePro",
+      "category": "project",
+      "tier": "Tier 2",
+      "status": "Maintained",
+      "statusExplicit": true,
+      "path": "C:\\HTML apps\\Truthcert1_work\\"
+    },
+    {
+      "id": "entity:project:21-finrenone-rapidmeta",
+      "provType": "Entity",
+      "label": "Finrenone RapidMeta",
+      "category": "project",
+      "tier": "Tier 3",
+      "status": "Archived",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\Finrenone\\"
+    },
+    {
+      "id": "entity:project:16-metasprint-autopilot",
+      "provType": "Entity",
+      "label": "MetaSprint Autopilot",
+      "category": "project",
+      "tier": "Tier 3",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metasprint-autopilot\\"
+    },
+    {
+      "id": "entity:project:20-metasprint-cardio-universe",
+      "provType": "Entity",
+      "label": "MetaSprint Cardio Universe",
+      "category": "project",
+      "tier": "Tier 3",
+      "status": "Active",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metasprint-cardio-universe\\"
+    },
+    {
+      "id": "entity:project:19-metasprint-dose-response",
+      "provType": "Entity",
+      "label": "MetaSprint Dose-Response",
+      "category": "project",
+      "tier": "Tier 3",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metasprint-dose-response\\"
+    },
+    {
+      "id": "entity:project:17-metasprint-dta",
+      "provType": "Entity",
+      "label": "MetaSprint DTA",
+      "category": "project",
+      "tier": "Tier 3",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metasprint-dta\\"
+    },
+    {
+      "id": "entity:project:18-metasprint-nma",
+      "provType": "Entity",
+      "label": "MetaSprint NMA",
+      "category": "project",
+      "tier": "Tier 3",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metasprintnma\\"
+    },
+    {
+      "id": "entity:project:23-501mlm",
+      "provType": "Entity",
+      "label": "501MLM",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\501MLM\\"
+    },
+    {
+      "id": "entity:project:37b-501mlm-submission",
+      "provType": "Entity",
+      "label": "501MLM_Submission",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\501MLM_Submission\\"
+    },
+    {
+      "id": "entity:project:24-cres",
+      "provType": "Entity",
+      "label": "CRES",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\CRES\\"
+    },
+    {
+      "id": "entity:project:28-grma",
+      "provType": "Entity",
+      "label": "GRMA",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\GRMA_paper\\"
+    },
+    {
+      "id": "entity:project:26-gwam",
+      "provType": "Entity",
+      "label": "GWAM",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\GWAM\\"
+    },
+    {
+      "id": "entity:project:22-heterogeneityase",
+      "provType": "Entity",
+      "label": "HeterogeneityASE",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\New_Heterogeneity_Model\\"
+    },
+    {
+      "id": "entity:project:25-ipd-qma",
+      "provType": "Entity",
+      "label": "IPD-QMA",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Accepted",
+      "statusExplicit": true,
+      "path": "C:\\Models\\IPD_QMA\\"
+    },
+    {
+      "id": "entity:project:37a-lfa-cbamm",
+      "provType": "Entity",
+      "label": "LFA (cbamm)",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\LFA\\"
+    },
+    {
+      "id": "entity:project:27-mem-meta-ecosystem",
+      "provType": "Entity",
+      "label": "MEM (Meta Ecosystem)",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\Meta_Ecosystem_Model\\"
+    },
+    {
+      "id": "entity:project:30-metaoverfit",
+      "provType": "Entity",
+      "label": "metaoverfit",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metaoverfit\\"
+    },
+    {
+      "id": "entity:project:37c-metaoverfit-paper",
+      "provType": "Entity",
+      "label": "metaoverfit-paper",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metaoverfit-paper\\"
+    },
+    {
+      "id": "entity:project:33-metaverse-robust-ma",
+      "provType": "Entity",
+      "label": "metaverse-robust-MA",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\metaverse-robust-MA\\"
+    },
+    {
+      "id": "entity:project:34-mlmresearch",
+      "provType": "Entity",
+      "label": "MLMResearch",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\MLMResearch\\"
+    },
+    {
+      "id": "entity:project:35-paper1-cbamm",
+      "provType": "Entity",
+      "label": "Paper1 (cbamm)",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\Paper1\\"
+    },
+    {
+      "id": "entity:project:36-paper2",
+      "provType": "Entity",
+      "label": "Paper2",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\Paper2.111025\\"
+    },
+    {
+      "id": "entity:project:31-pub-bias-simulation",
+      "provType": "Entity",
+      "label": "pub-bias-simulation",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\pub-bias-simulation\\"
+    },
+    {
+      "id": "entity:project:32-rmstnma",
+      "provType": "Entity",
+      "label": "rmstnma",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\rmstnma\\"
+    },
+    {
+      "id": "entity:project:29-synthesis-fatiha",
+      "provType": "Entity",
+      "label": "SYNTHESIS (FATIHA)",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\FATIHA_Project\\"
+    },
+    {
+      "id": "entity:project:106-ubcma",
+      "provType": "Entity",
+      "label": "UBCMA",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Active",
+      "statusExplicit": true,
+      "path": "C:\\ubcma\\"
+    },
+    {
+      "id": "entity:project:37-wasserstein",
+      "provType": "Entity",
+      "label": "wasserstein",
+      "category": "project",
+      "tier": "Tier 4",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\wasserstein\\"
+    },
+    {
+      "id": "entity:project:39-causalsynth",
+      "provType": "Entity",
+      "label": "CausalSynth",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\CausalSynth\\"
+    },
+    {
+      "id": "entity:project:40d-evidencegapmap",
+      "provType": "Entity",
+      "label": "EvidenceGapMap",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\EvidenceGapMap\\"
+    },
+    {
+      "id": "entity:project:40-mapriors",
+      "provType": "Entity",
+      "label": "MAPriors",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MAPriors\\"
+    },
+    {
+      "id": "entity:project:38-multiversema",
+      "provType": "Entity",
+      "label": "MultiverseMA",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\MultiverseMA\\"
+    },
+    {
+      "id": "entity:project:40a-outcomereportingbias",
+      "provType": "Entity",
+      "label": "OutcomeReportingBias",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\OutcomeReportingBias\\"
+    },
+    {
+      "id": "entity:project:40b-overlapdetector",
+      "provType": "Entity",
+      "label": "OverlapDetector",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\OverlapDetector\\"
+    },
+    {
+      "id": "entity:project:40c-predictiongap",
+      "provType": "Entity",
+      "label": "PredictionGap",
+      "category": "project",
+      "tier": "Tier 5",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\PredictionGap\\"
+    },
+    {
+      "id": "entity:project:43-cochranedataextractor",
+      "provType": "Entity",
+      "label": "CochraneDataExtractor",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\CochraneDataExtractor\\"
+    },
+    {
+      "id": "entity:project:44-dataextractor",
+      "provType": "Entity",
+      "label": "Dataextractor",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\Dataextractor\\"
+    },
+    {
+      "id": "entity:project:48-dta70",
+      "provType": "Entity",
+      "label": "DTA70",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\DTA70\\"
+    },
+    {
+      "id": "entity:project:45-kmcurve",
+      "provType": "Entity",
+      "label": "KMcurve",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\KMcurve\\"
+    },
+    {
+      "id": "entity:project:42-pairwise70",
+      "provType": "Entity",
+      "label": "Pairwise70",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Models\\Pairwise70\\"
+    },
+    {
+      "id": "entity:project:41-rct-extractor-v2",
+      "provType": "Entity",
+      "label": "RCT Extractor v2",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\rct-extractor-v2\\"
+    },
+    {
+      "id": "entity:project:46-repo100",
+      "provType": "Entity",
+      "label": "repo100",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\repo100\\"
+    },
+    {
+      "id": "entity:project:47-repo300-enma-snma",
+      "provType": "Entity",
+      "label": "repo300-ENMA-SNMA",
+      "category": "project",
+      "tier": "Tier 6",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\repo300-ENMA-SNMA\\"
+    },
+    {
+      "id": "entity:project:54-autograde",
+      "provType": "Entity",
+      "label": "AutoGRADE",
+      "category": "project",
+      "tier": "Tier 7",
+      "status": "Shipped",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\AutoGRADE\\"
+    },
+    {
+      "id": "entity:project:49-hta-evidence-integrity",
+      "provType": "Entity",
+      "label": "HTA Evidence Integrity",
+      "category": "project",
+      "tier": "Tier 7",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\HTA_Evidence_Integrity_Suite\\"
+    },
+    {
+      "id": "entity:project:53-hta-oman",
+      "provType": "Entity",
+      "label": "HTA Oman",
+      "category": "project",
+      "tier": "Tier 7",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Projects\\HTA-oman\\"
+    },
+    {
+      "id": "entity:project:50-hta-transportability",
+      "provType": "Entity",
+      "label": "HTA Transportability",
+      "category": "project",
+      "tier": "Tier 7",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\HTA_Transportability_Engine\\"
+    },
+    {
+      "id": "entity:project:52-hta-unified-intel",
+      "provType": "Entity",
+      "label": "HTA Unified Intel",
+      "category": "project",
+      "tier": "Tier 7",
+      "status": "Paused",
+      "statusExplicit": true,
+      "path": "C:\\Models\\HTA_Unified_Intelligence_System\\"
+    },
+    {
+      "id": "entity:project:51-value-based-hta",
+      "provType": "Entity",
+      "label": "Value-Based HTA",
+      "category": "project",
+      "tier": "Tier 7",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\Value_Based_HTA_Engine\\"
+    },
+    {
+      "id": "entity:project:56-fatiha-course",
+      "provType": "Entity",
+      "label": "Fatiha Course",
+      "category": "project",
+      "tier": "Tier 8",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\Fatiha-Course\\"
+    },
+    {
+      "id": "entity:project:57-fatiha-course-v2",
+      "provType": "Entity",
+      "label": "Fatiha Course v2",
+      "category": "project",
+      "tier": "Tier 8",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\Fatiha-course-github-v2\\"
+    },
+    {
+      "id": "entity:project:55-synthesis-course",
+      "provType": "Entity",
+      "label": "Synthesis Course",
+      "category": "project",
+      "tier": "Tier 8",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "(in HTML apps or user home)"
+    },
+    {
+      "id": "entity:project:59-burhan",
+      "provType": "Entity",
+      "label": "Burhan",
+      "category": "project",
+      "tier": "Tier 9",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\Burhan\\"
+    },
+    {
+      "id": "entity:project:60-ipd-zahid",
+      "provType": "Entity",
+      "label": "IPD Zahid",
+      "category": "project",
+      "tier": "Tier 9",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\IPD Zahid\\"
+    },
+    {
+      "id": "entity:project:58-shahzaib-icu",
+      "provType": "Entity",
+      "label": "Shahzaib ICU",
+      "category": "project",
+      "tier": "Tier 9",
+      "status": "Submission ready",
+      "statusExplicit": true,
+      "path": "C:\\Models\\shahzaib-icu-landscape\\"
+    },
+    {
+      "id": "entity:project:61-worldipd",
+      "provType": "Entity",
+      "label": "WorldIPD",
+      "category": "project",
+      "tier": "Tier 9",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\WorldIPD\\"
+    },
+    {
+      "id": "entity:project:62-worldipd-private",
+      "provType": "Entity",
+      "label": "WorldIPD-private",
+      "category": "project",
+      "tier": "Tier 9",
+      "status": "Needs triage",
+      "statusExplicit": false,
+      "path": "C:\\Projects\\WorldIPD-private\\"
+    }
+  ],
+  "edges": [
+    {
+      "source": "activity:parse",
+      "target": "entity:snapshot",
+      "relation": "used"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:snapshot",
+      "relation": "used"
+    },
+    {
+      "source": "activity:render",
+      "target": "entity:summary",
+      "relation": "used"
+    },
+    {
+      "source": "activity:package",
+      "target": "entity:summary",
+      "relation": "used"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:summary",
+      "relation": "generated"
+    },
+    {
+      "source": "activity:render",
+      "target": "entity:dashboard",
+      "relation": "generated"
+    },
+    {
+      "source": "activity:render",
+      "target": "entity:graph",
+      "relation": "generated"
+    },
+    {
+      "source": "activity:package",
+      "target": "entity:paper",
+      "relation": "generated"
+    },
+    {
+      "source": "activity:parse",
+      "target": "agent:builder",
+      "relation": "wasAssociatedWith"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "agent:builder",
+      "relation": "wasAssociatedWith"
+    },
+    {
+      "source": "activity:render",
+      "target": "agent:builder",
+      "relation": "wasAssociatedWith"
+    },
+    {
+      "source": "activity:package",
+      "target": "agent:builder",
+      "relation": "wasAssociatedWith"
+    },
+    {
+      "source": "activity:package",
+      "target": "agent:author",
+      "relation": "wasAssociatedWith"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-1",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-1",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-2",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-2",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-3",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-3",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-4",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-4",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-5",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-5",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-6",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-6",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-7",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-7",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-8",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-8",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-9",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-9",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-10",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-10",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-11",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-11",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:summarize",
+      "target": "entity:tier:tier-12",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:tier:tier-12",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:6-adaptsim",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:6-adaptsim",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:6-adaptsim",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:4-al-mizan",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:4-al-mizan",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:4-al-mizan",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:5-bias-forensics",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:5-bias-forensics",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:5-bias-forensics",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:1-cardiooracle",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:1-cardiooracle",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:1-cardiooracle",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:7-clinic-website",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:7-clinic-website",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:7-clinic-website",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:2-fragility-atlas",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:2-fragility-atlas",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:2-fragility-atlas",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:3-metareproducer",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:3-metareproducer",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:3-metareproducer",
+      "target": "entity:tier:tier-1",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:68-3dvitreous-grapher",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:68-3dvitreous-grapher",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:68-3dvitreous-grapher",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:63-asa",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:63-asa",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:63-asa",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73a-asa",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73a-asa",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73a-asa",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:109-bayesian-ma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:109-bayesian-ma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:109-bayesian-ma",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:107-benfordma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:107-benfordma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:107-benfordma",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:103-component-nma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:103-component-nma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:103-component-nma",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:66-ctgov-search-strategies",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:66-ctgov-search-strategies",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:66-ctgov-search-strategies",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:67-cv-rct-analysis",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:67-cv-rct-analysis",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:67-cv-rct-analysis",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:108-evidence-half-life",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:108-evidence-half-life",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:108-evidence-half-life",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:105-evidencequality-concordance",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:105-evidencequality-concordance",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:105-evidencequality-concordance",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73f-living-ma-engine",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73f-living-ma-engine",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73f-living-ma-engine",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:69-livingmeta-watchman",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:69-livingmeta-watchman",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:69-livingmeta-watchman",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:106-ma-power",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:106-ma-power",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:106-ma-power",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:110-ma-workbench",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:110-ma-workbench",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:110-ma-workbench",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:113-meta-regression",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:113-meta-regression",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:113-meta-regression",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:65-metaextract",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:65-metaextract",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:65-metaextract",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:79-metaguard",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:79-metaguard",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:79-metaguard",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:80-metamethods",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:80-metamethods",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:80-metamethods",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:108a-metashift",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:108a-metashift",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:108a-metashift",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73-minireview",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73-minireview",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73-minireview",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73d-new-app",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73d-new-app",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73d-new-app",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73b-oman",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73b-oman",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73b-oman",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:70-pfa-af-livingmeta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:70-pfa-af-livingmeta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:70-pfa-af-livingmeta",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:112-pooling-suite",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:112-pooling-suite",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:112-pooling-suite",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73e-portfolio-site",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73e-portfolio-site",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73e-portfolio-site",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:107-prisma-checker",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:107-prisma-checker",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:107-prisma-checker",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:111-pub-bias-suite",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:111-pub-bias-suite",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:111-pub-bias-suite",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:72-rayyanreplacement",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:72-rayyanreplacement",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:72-rayyanreplacement",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:104-rmst-meta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:104-rmst-meta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:104-rmst-meta",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:102-rob-assessor",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:102-rob-assessor",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:102-rob-assessor",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:73c-superapp",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:73c-superapp",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:73c-superapp",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:64-trialradar",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:64-trialradar",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:64-trialradar",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:71-tricuspid-teer",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:71-tricuspid-teer",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:71-tricuspid-teer",
+      "target": "entity:tier:tier-10",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:76-childnajia",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:76-childnajia",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:76-childnajia",
+      "target": "entity:tier:tier-11",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:74-clinic-site",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:74-clinic-site",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:74-clinic-site",
+      "target": "entity:tier:tier-11",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:75-private-website",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:75-private-website",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:75-private-website",
+      "target": "entity:tier:tier-11",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:78-stories",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:78-stories",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:78-stories",
+      "target": "entity:tier:tier-11",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:77-waternajia",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:77-waternajia",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:77-waternajia",
+      "target": "entity:tier:tier-11",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:97-advanced-nma-pooling",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:97-advanced-nma-pooling",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:97-advanced-nma-pooling",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:102-claude-plugins",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:102-claude-plugins",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:102-claude-plugins",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:101-claude-rct-work",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:101-claude-rct-work",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:101-claude-rct-work",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:85-esc-acs-living-meta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:85-esc-acs-living-meta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:85-esc-acs-living-meta",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:93-everything-claude-code",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:93-everything-claude-code",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:93-everything-claude-code",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:80-evidence-inference",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:80-evidence-inference",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:80-evidence-inference",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:91-experimental-meta-analysis",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:91-experimental-meta-analysis",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:91-experimental-meta-analysis",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:104-glm-code",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:104-glm-code",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:104-glm-code",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:83-hfpef-registry-calibration",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:83-hfpef-registry-calibration",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:83-hfpef-registry-calibration",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:82-hfpef-registry-synth",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:82-hfpef-registry-synth",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:82-hfpef-registry-synth",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:92-idea12",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:92-idea12",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:92-idea12",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:94-ipd-meta-pro-link",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:94-ipd-meta-pro-link",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:94-ipd-meta-pro-link",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:95-ipd-qma-project",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:95-ipd-qma-project",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:95-ipd-qma-project",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:81-llm-meta-analysis",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:81-llm-meta-analysis",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:81-llm-meta-analysis",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:88-mafi",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:88-mafi",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:88-mafi",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:89-mafi-continuation",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:89-mafi-continuation",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:89-mafi-continuation",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:90-maxent-reconstructor",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:90-maxent-reconstructor",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:90-maxent-reconstructor",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:79-meta-epidemiology-bias-correction",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:79-meta-epidemiology-bias-correction",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:79-meta-epidemiology-bias-correction",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:100-metafusion-lab",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:100-metafusion-lab",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:100-metafusion-lab",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:86-metanew",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:86-metanew",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:86-metanew",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:87-mlm501",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:87-mlm501",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:87-mlm501",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:103-multipledatameta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:103-multipledatameta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:103-multipledatameta",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:96-prognostic-meta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:96-prognostic-meta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:96-prognostic-meta",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:84-registry-first-rct-meta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:84-registry-first-rct-meta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:84-registry-first-rct-meta",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:99-surronma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:99-surronma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:99-surronma",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:98-tower",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:98-tower",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:98-tower",
+      "target": "entity:tier:tier-12",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:13-dose-response-nma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:13-dose-response-nma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:13-dose-response-nma",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:10-dta-pro",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:10-dta-pro",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:10-dta-pro",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:11-hta-artifact-standard",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:11-hta-artifact-standard",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:11-hta-artifact-standard",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:9-ipd-meta-pro",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:9-ipd-meta-pro",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:9-ipd-meta-pro",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:15-living-meta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:15-living-meta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:15-living-meta",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:12-nma-apps",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:12-nma-apps",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:12-nma-apps",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:14-pairwise-ai",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:14-pairwise-ai",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:14-pairwise-ai",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:8-truthcert-pairwisepro",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:8-truthcert-pairwisepro",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:8-truthcert-pairwisepro",
+      "target": "entity:tier:tier-2",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:21-finrenone-rapidmeta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:21-finrenone-rapidmeta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:21-finrenone-rapidmeta",
+      "target": "entity:tier:tier-3",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:16-metasprint-autopilot",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:16-metasprint-autopilot",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:16-metasprint-autopilot",
+      "target": "entity:tier:tier-3",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:20-metasprint-cardio-universe",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:20-metasprint-cardio-universe",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:20-metasprint-cardio-universe",
+      "target": "entity:tier:tier-3",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:19-metasprint-dose-response",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:19-metasprint-dose-response",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:19-metasprint-dose-response",
+      "target": "entity:tier:tier-3",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:17-metasprint-dta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:17-metasprint-dta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:17-metasprint-dta",
+      "target": "entity:tier:tier-3",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:18-metasprint-nma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:18-metasprint-nma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:18-metasprint-nma",
+      "target": "entity:tier:tier-3",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:23-501mlm",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:23-501mlm",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:23-501mlm",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:37b-501mlm-submission",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:37b-501mlm-submission",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:37b-501mlm-submission",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:24-cres",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:24-cres",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:24-cres",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:28-grma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:28-grma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:28-grma",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:26-gwam",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:26-gwam",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:26-gwam",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:22-heterogeneityase",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:22-heterogeneityase",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:22-heterogeneityase",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:25-ipd-qma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:25-ipd-qma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:25-ipd-qma",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:37a-lfa-cbamm",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:37a-lfa-cbamm",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:37a-lfa-cbamm",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:27-mem-meta-ecosystem",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:27-mem-meta-ecosystem",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:27-mem-meta-ecosystem",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:30-metaoverfit",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:30-metaoverfit",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:30-metaoverfit",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:37c-metaoverfit-paper",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:37c-metaoverfit-paper",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:37c-metaoverfit-paper",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:33-metaverse-robust-ma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:33-metaverse-robust-ma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:33-metaverse-robust-ma",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:34-mlmresearch",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:34-mlmresearch",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:34-mlmresearch",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:35-paper1-cbamm",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:35-paper1-cbamm",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:35-paper1-cbamm",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:36-paper2",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:36-paper2",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:36-paper2",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:31-pub-bias-simulation",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:31-pub-bias-simulation",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:31-pub-bias-simulation",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:32-rmstnma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:32-rmstnma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:32-rmstnma",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:29-synthesis-fatiha",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:29-synthesis-fatiha",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:29-synthesis-fatiha",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:106-ubcma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:106-ubcma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:106-ubcma",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:37-wasserstein",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:37-wasserstein",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:37-wasserstein",
+      "target": "entity:tier:tier-4",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:39-causalsynth",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:39-causalsynth",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:39-causalsynth",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:40d-evidencegapmap",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:40d-evidencegapmap",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:40d-evidencegapmap",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:40-mapriors",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:40-mapriors",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:40-mapriors",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:38-multiversema",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:38-multiversema",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:38-multiversema",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:40a-outcomereportingbias",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:40a-outcomereportingbias",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:40a-outcomereportingbias",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:40b-overlapdetector",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:40b-overlapdetector",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:40b-overlapdetector",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:40c-predictiongap",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:40c-predictiongap",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:40c-predictiongap",
+      "target": "entity:tier:tier-5",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:43-cochranedataextractor",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:43-cochranedataextractor",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:43-cochranedataextractor",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:44-dataextractor",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:44-dataextractor",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:44-dataextractor",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:48-dta70",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:48-dta70",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:48-dta70",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:45-kmcurve",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:45-kmcurve",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:45-kmcurve",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:42-pairwise70",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:42-pairwise70",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:42-pairwise70",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:41-rct-extractor-v2",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:41-rct-extractor-v2",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:41-rct-extractor-v2",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:46-repo100",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:46-repo100",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:46-repo100",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:47-repo300-enma-snma",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:47-repo300-enma-snma",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:47-repo300-enma-snma",
+      "target": "entity:tier:tier-6",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:54-autograde",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:54-autograde",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:54-autograde",
+      "target": "entity:tier:tier-7",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:49-hta-evidence-integrity",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:49-hta-evidence-integrity",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:49-hta-evidence-integrity",
+      "target": "entity:tier:tier-7",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:53-hta-oman",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:53-hta-oman",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:53-hta-oman",
+      "target": "entity:tier:tier-7",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:50-hta-transportability",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:50-hta-transportability",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:50-hta-transportability",
+      "target": "entity:tier:tier-7",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:52-hta-unified-intel",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:52-hta-unified-intel",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:52-hta-unified-intel",
+      "target": "entity:tier:tier-7",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:51-value-based-hta",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:51-value-based-hta",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:51-value-based-hta",
+      "target": "entity:tier:tier-7",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:56-fatiha-course",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:56-fatiha-course",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:56-fatiha-course",
+      "target": "entity:tier:tier-8",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:57-fatiha-course-v2",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:57-fatiha-course-v2",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:57-fatiha-course-v2",
+      "target": "entity:tier:tier-8",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:55-synthesis-course",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:55-synthesis-course",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:55-synthesis-course",
+      "target": "entity:tier:tier-8",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:59-burhan",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:59-burhan",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:59-burhan",
+      "target": "entity:tier:tier-9",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:60-ipd-zahid",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:60-ipd-zahid",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:60-ipd-zahid",
+      "target": "entity:tier:tier-9",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:58-shahzaib-icu",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:58-shahzaib-icu",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:58-shahzaib-icu",
+      "target": "entity:tier:tier-9",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:61-worldipd",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:61-worldipd",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:61-worldipd",
+      "target": "entity:tier:tier-9",
+      "relation": "specializationOf"
+    },
+    {
+      "source": "activity:parse",
+      "target": "entity:project:62-worldipd-private",
+      "relation": "generated"
+    },
+    {
+      "source": "entity:project:62-worldipd-private",
+      "target": "entity:snapshot",
+      "relation": "wasDerivedFrom"
+    },
+    {
+      "source": "entity:project:62-worldipd-private",
+      "target": "entity:tier:tier-9",
+      "relation": "specializationOf"
+    }
+  ]
+}
