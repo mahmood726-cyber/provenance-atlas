@@ -37,5 +37,9 @@
       "role": "Boundary",
       "text": "The atlas clarifies derivation paths, but it does not inspect live filesystem events, Git history, or authorship beyond the bundled snapshot."
     }
-  ]
+  ],
+  "author": "Mahmood Ahmad",
+  "affiliation": "Tahir Heart Institute",
+  "email": "mahmood.ahmad2@nhs.net",
+  "submitted": false
 }
