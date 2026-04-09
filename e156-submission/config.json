@@ -2,7 +2,7 @@
   "title": "ProvenanceAtlas: Static Lineage Graphing for the C Drive Evidence Portfolio",
   "slug": "provenance-atlas",
   "date": "2026-03-29",
-  "path": "C:\\Users\\user\\ProvenanceAtlas",
+  "path": "C:\\Projects\\ProvenanceAtlas",
   "type": "methods",
   "primary_estimand": "explicit lifecycle coverage in the provenance graph",
   "certainty": "moderate",
