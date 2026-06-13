@@ -23,13 +23,17 @@ ProvenanceAtlas fills that gap with a static PROV-style graph.
 
 ## Rebuild
 
-Run:
+Run from the repository root:
 
-`python C:\Users\user\ProvenanceAtlas\scripts\build_provenance_atlas.py`
+```
+python scripts/build_provenance_atlas.py
+```
 
 For a custom source file:
 
-`python C:\Users\user\ProvenanceAtlas\scripts\build_provenance_atlas.py --source path\to\portfolio-data.json`
+```
+python scripts/build_provenance_atlas.py --source path\to\portfolio-data.json
+```
 
 ## Standards basis
 
